@@ -1,0 +1,35 @@
+[project]
+name = "cloudcost-api"
+version = "1.0.0"
+description = "FastAPI service for cloud cost monitoring and optimization"
+requires-python = ">=3.12"
+dependencies = [
+  "boto3==1.35.76",
+  "fastapi==0.115.6",
+  "httpx==0.28.1",
+  "prometheus-client==0.21.1",
+  "psycopg[binary]==3.2.3",
+  "pydantic-settings==2.7.0",
+  "SQLAlchemy==2.0.36",
+  "uvicorn[standard]==0.34.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.4",
+  "pytest-cov==6.0.0",
+  "ruff==0.8.4",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["B008", "E501", "I001"]
