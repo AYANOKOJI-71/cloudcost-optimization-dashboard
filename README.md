@@ -1,10 +1,9 @@
 # CloudCost IQ — Cloud Cost Monitoring & Optimization Dashboard
 
-**CloudCost IQ** is a portfolio-ready FinOps dashboard that turns daily AWS and Azure cost records into prioritized, reviewable savings opportunities. It combines a **FastAPI** data and optimization service, **React** dashboard, **PostgreSQL** ledger, and provisioned **Prometheus + Grafana** observability stack.
+**CloudCost IQ** is a FinOps dashboard that turns daily AWS and Azure cost records into prioritized, reviewable savings opportunities. It combines a **FastAPI** data and optimization service, **React** dashboard, **PostgreSQL** ledger, and provisioned **Prometheus + Grafana** observability stack.
 
 The repository opens in a safe local demonstration mode: it contains a deterministic development ledger that is clearly identified as demonstration data. It does **not** use cloud credentials, contact provider APIs, or claim the sample values represent a real customer’s bill. Live AWS and Azure synchronization must be enabled explicitly through server-side environment variables after least-privilege access is reviewed.
 
-## Why this project is CV-worthy
 
 | Capability | Evidence in this repository |
 |---|---|
